@@ -1,0 +1,206 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #e63946;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #78a9f1;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fdbc4b;
+}
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+#sobre-o-restaurante, #cardapio {
+    background-color: #f0f8ff;
+}
+
+.text-colored {
+    color: #e63946;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #e63946;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #fdbc4b;
+}
+
+.textarea {
+    resize: none;
+}
+
+/* Tamanho e alinhamento do ícone do iFood */
+.icon-ifood {
+    width: 37px;
+    height: 37px;
+    vertical-align: middle;
+}
+
+.icon-instagram {
+    width: 30px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 3px;
+    margin-right: 4px;
+}
+
+.icon-whatsapp {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 9px;
+    margin-right: 8px;
+}
+
+.social-links {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li {
+    list-style: none; /* Remove os marcadores da lista */
+    margin-bottom: 8px; /* Espaçamento entre os itens */
+}
+
+/* Remove sublinhado dos links sociais */
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #fdbc4b; /* Cor temática ao passar o mouse */
+}
+
+.form-campo textarea {
+    resize: none;
+}
+
+.is-invalid {
+    border-color: red;
+}
+
+.toast {
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toast-success .toast-header {
+    background-color: #28a745; /* Verde para sucesso */
+    color: #fff;
+}
+
+.toast-error .toast-header {
+    background-color: #dc3545; /* Vermelho para erro */
+    color: #fff;
+}
+
+.toast-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #212529;
+}
+
+/* Ajustando cores para a harmonia do tema */
+.toast-success .toast-body {
+    background-color: #e6f8e9; /* Verde claro */
+    color: #155724; /* Texto verde escuro */
+}
+
+.toast-error .toast-body {
+    background-color: #f8e6e6; /* Vermelho claro */
+    color: #721c24; /* Texto vermelho escuro */
+}
+
+/* Forçar visibilidade do botão de fechar no Toast */
+.toast .btn-close {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    background: none;
+    border: none;
+    opacity: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast .btn-close:before {
+    content: '×'; /* Substitui por um "X" se o ícone não carregar */
+    font-size: 1.5rem;
+    color: white; /* Ajuste de cor */
+    font-weight: bold;
+}
+
+.toast .btn-close:hover {
+    color: lightgray; /* Realce ao passar o mouse */
+}
+
+footer {
+    background-color: #343a40; /* Fundo escuro */
+    color: #f8f9fa; /* Texto claro */
+}
+
+footer .text-colored {
+    color: #b00a0a; /* Cor temática */
+}
+
+footer a {
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+footer a:hover {
+    color: #fc8c8c; /* Cor temática ao passar o mouse */
+}
+
+footer .social-links i {
+    transition: color 0.3s;
+}
+
+/* Personalizando a barra de rolagem para navegadores WebKit */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b00a0a;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b0c9ea;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
