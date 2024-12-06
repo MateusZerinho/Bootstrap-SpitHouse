@@ -3,12 +3,12 @@ body {
 }
 
 .navbar {
-    background-color: #e63946;
+    background-color: #b10909;
 }
 
 #cabecalho .nav .nav-link.active {
     background-color: #fff;
-    color: #78a9f1;
+    color: #4188cd;
 }
 
 #cabecalho .nav .nav-link,
@@ -19,11 +19,21 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #fdbc4b;
+    background-color: #febc4a;
 }
 
 .section-title {
-    font-family: Pacifico, cursive;
+    font-family: Cookie, cursive;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.cookie-regular {
+    font-family: "Cookie", cursive;
+    font-family: "Cookie", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
 }
 
 #sobre-o-restaurante, #cardapio {
@@ -31,21 +41,25 @@ body {
 }
 
 .text-colored {
-    color: #e63946;
+    color: #b10909;
 }
 
-.nav-cardapio .nav-link.active,
-#fale-conosco button {
-    background-color: #e63946;
+.nav-cardapio .nav-link.active {
+    background-color: #febc4a;
     color: #fff;
 }
 
 .nav-cardapio .nav-link:hover {
-    color: #fdbc4b;
+    color: #febc4a;
 }
 
 .textarea {
     resize: none;
+}
+
+#fale-conosco button {
+    background-color: #b10909;
+    color: #fff;
 }
 
 /* Tamanho e alinhamento do ícone do iFood */
@@ -87,7 +101,7 @@ body {
 }
 
 .social-links a:hover {
-    color: #fdbc4b; /* Cor temática ao passar o mouse */
+    color: #4188cd; /* Cor temática ao passar o mouse */
 }
 
 .form-campo textarea {
@@ -179,6 +193,12 @@ footer .social-links i {
     transition: color 0.3s;
 }
 
+.logo-img {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    max-height: 50px;
+}
+
 /* Personalizando a barra de rolagem para navegadores WebKit */
 ::-webkit-scrollbar {
     width: 10px;
@@ -190,7 +210,7 @@ footer .social-links i {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #b00a0a;
+    background-color: #4188cd;
     border-radius: 10px;
     border: 2px solid #f1f1f1;
 }
@@ -199,8 +219,37 @@ footer .social-links i {
     background-color: #b0c9ea;
 }
 
+.responsive-iframe {
+    width: 100%;  /* O iframe ocupará 100% da largura do contêiner pai */
+    max-width: 600px;  /* Limita a largura máxima do iframe */
+    height: 300px;  /* Altura padrão */
+    border: 0;  /* Remove bordas extras */
+}
+
+@media (max-width: 768px) {
+    .responsive-iframe {
+        height: 250px;  /* Ajuste da altura para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-iframe {
+        height: 200px;  /* Ajuste adicional para telas muito pequenas */
+    }
+}
+
 @media (max-width: 767px) {
     .carousel-item img {
         height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2.section-title {
+        font-size: 2.2rem !important; /* Aumente conforme necessário */
+    }
+
+    h3.section-title {
+        font-size: 1.8rem !important; /* Aumente conforme necessário */
     }
 }
